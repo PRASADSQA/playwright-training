@@ -11,7 +11,7 @@ export default defineConfig({
   reporter: [['list'], ['html']],
 
   use: {
-    headless: false, // visible browser for demo
+    headless: !!process.env.CI,
     viewport: { width: 1280, height: 800 },
     ignoreHTTPSErrors: true,
     screenshot: 'only-on-failure',
