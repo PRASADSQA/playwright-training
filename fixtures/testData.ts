@@ -1,0 +1,1 @@
+export const searchTerms = ['Playwright', 'Automation testing', 'QA engineering'];
